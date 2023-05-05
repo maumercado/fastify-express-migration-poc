@@ -1,0 +1,164 @@
+{
+  "properties": [
+    {
+      "id": 1,
+      "name": "Sample Property",
+      "address": "123 Main St"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "086ff75d-ac55-4354-acbc-f80235d7ad43"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "bc5c7d2f-de76-4754-9dd4-a307f68d5d80"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "9f89ddcd-f6fd-4d67-936e-5fbd6782b573"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "ef204bca-cd08-4fab-98cd-68d348fea3e1"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "75de3931-bb7d-449d-a2b4-48db541a5eac"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "4a5aa7cf-41d4-43b3-b5bb-e39f1cc441f6"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "bc6d3146-350a-445b-911c-9f6bf53f80c2"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "9e0777e3-afac-43fe-9f41-73ad63fdae28"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "6231b74b-559e-4ca2-967d-d710596733bc"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "d2be35d6-da52-4bb1-9a7d-1c33a1e2890e"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "2d5b114a-3fda-4372-b314-0b92b2897ef7"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "ea29dfcb-5375-46fc-b65d-907612c7c25f"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "2a54d285-8c49-4b75-b0fd-067efe0a50e9"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "d9aaa2f9-f875-4749-948b-60de1235187a"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "468846a8-4f7a-4b7f-b2f3-2bf8cc187dcf"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "7ca9be25-5dd0-4ba7-93bb-62f803411604"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "1446f4a2-9f05-4a24-9241-ee3cd5f28c42"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "357625e1-b8dd-478d-a96a-34a6f4eb60c4"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "7b7d7a79-416e-477c-967f-2cc233532617"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "cdc8cc0f-6474-46f5-b856-c21f69f13376"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "5eda136b-3be0-4da3-9ce8-23c0d814aace"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "4016abe6-dd40-42f7-81f8-9fcd3a983434"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "2b055456-1f96-4a10-af86-5ef9ddee1c2f"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "5069073c-f5fd-48b8-9f4d-d4bdc1af6ec2"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "d2608a42-9177-4ea6-98e2-50d6915ad704"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "d39662b0-f63e-4666-8ff4-b89b6e0f6efe"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "acededab-5b0a-4733-a8c1-b62e402cd2cf"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "cd6d1431-a865-402c-83fa-0a9bcc4b1907"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "85d010fa-78da-4317-b400-9526dcf00fc2"
+    },
+    {
+      "name": "New Property",
+      "address": "456 Second St",
+      "id": "aab55efa-69d9-4b25-95c1-a21db0d22c1f"
+    },
+    {
+      "name": "Updated Property",
+      "address": "789 Third St",
+      "id": "c197f918-2778-4267-8661-06bc1b206dc5"
+    }
+  ]
+}

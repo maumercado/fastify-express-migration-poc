@@ -1,0 +1,27 @@
+{
+  "name": "fastify-express-migration-poc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "lint": "standard",
+    "lint:fix": "standard --fix",
+    "test": "NODE_ENV=test tap test/**/*.test.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "lodash-id": "^0.14.1",
+    "lowdb": "^1.0.0",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "standardjs": "^1.0.0-alpha",
+    "supertest": "^6.3.3",
+    "tap": "^16.3.4"
+  }
+}

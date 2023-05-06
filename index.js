@@ -1,28 +1,36 @@
-const express = require('express');
+const fastifyExpress = require('@fastify/express')
+const express = require('express')
+const routes = require('./routes')
 
-const logger = require('./logger');
-const middleware = require('./middleware');
-const router = require('./routes');
+const middleware = require('./middleware')
 
-// Create the Express app
-const createServer = () => {
-
-  const app = express();
-  app.use(express.json());
-
-  // Middleware for logging requests
-  app.use(middleware.logRequests);
-
+async function createServer () {
+  const fastify = require('fastify')({
+    logger: process.env.NODE_ENV !== 'test'
+  })
+  // await fastify.register(fastifyFormBody)
+  await fastify.register(fastifyExpress)
   // Middleware example for checking API key
-  app.use(middleware.checkAPIKey);
+  await fastify.use(express.json())
+  await fastify.use(middleware.checkAPIKey)
+  fastify.express.disabled('x-powered-by') // true
 
-  app.use('/api', router);
-
+  await fastify.use('/api', routes)
   // Start the server
-  const port = process.env.PORT || 3000;
-  return app.listen(port, () => {
-    logger.info(`Server started on port ${port}`);
-  });
+  const port = process.env.PORT || 3000
+  try {
+    await fastify.listen({ port })
+    fastify.log.info(`Server started on port ${port}`)
+  } catch (err) {
+    fastify.log.error(err)
+    process.exit(1)
+  }
+
+  return fastify
 }
 
-module.exports = createServer();
+if (require.main === module) {
+  createServer()
+} else {
+  module.exports = createServer
+}

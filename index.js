@@ -8,8 +8,8 @@ async function createServer () {
   const fastify = require('fastify')({
     logger: process.env.NODE_ENV !== 'test'
   })
-  // await fastify.register(fastifyFormBody)
   await fastify.register(fastifyExpress)
+
   // Middleware example for checking API key
   await fastify.use(express.json())
   await fastify.use(middleware.checkAPIKey)

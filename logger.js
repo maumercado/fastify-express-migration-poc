@@ -1,4 +1,4 @@
-const winston = require('winston');
+const winston = require('winston')
 
 const logger = winston.createLogger({
   level: 'info',
@@ -8,13 +8,13 @@ const logger = winston.createLogger({
   ),
   transports: [
     new winston.transports.Console({ format: winston.format.simple() })
-  ],
-});
+  ]
+})
 
 logger.transports.forEach((transport) => {
   if (transport) {
-    transport.silent = process.env.NODE_ENV === 'test';
+    transport.silent = process.env.NODE_ENV === 'test'
   }
-});
+})
 
-module.exports = logger;
+module.exports = logger

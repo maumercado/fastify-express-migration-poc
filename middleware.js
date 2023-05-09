@@ -1,4 +1,3 @@
-
 module.exports = {
   checkAPIKey: function checkAPIKey (req, res, next) {
     const apiKey = req.header('x-api-key')

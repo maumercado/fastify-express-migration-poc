@@ -1,6 +1,5 @@
-const fastifyExpress = require('@fastify/express')
-const express = require('express')
 const routes = require('./routes')
+const db = require('./database')
 
 const middleware = require('./middleware')
 
@@ -8,14 +7,15 @@ async function createServer () {
   const fastify = require('fastify')({
     logger: process.env.NODE_ENV !== 'test'
   })
-  await fastify.register(fastifyExpress)
+
+  await fastify.register(db, {
+    filename: './db.json',
+  })
 
   // Middleware example for checking API key
-  await fastify.use(express.json())
-  fastify.use(middleware.checkAPIKey)
-  fastify.express.disabled('x-powered-by') // true
+  fastify.register(middleware)
 
-  fastify.use('/api', routes)
+  fastify.register(routes, { prefix: '/api' })
   // Start the server
   const port = process.env.PORT || 3000
   try {

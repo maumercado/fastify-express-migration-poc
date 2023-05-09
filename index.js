@@ -12,10 +12,10 @@ async function createServer () {
 
   // Middleware example for checking API key
   await fastify.use(express.json())
-  await fastify.use(middleware.checkAPIKey)
+  fastify.use(middleware.checkAPIKey)
   fastify.express.disabled('x-powered-by') // true
 
-  await fastify.use('/api', routes)
+  fastify.use('/api', routes)
   // Start the server
   const port = process.env.PORT || 3000
   try {
